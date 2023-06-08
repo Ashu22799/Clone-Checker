@@ -16,6 +16,7 @@ const productSchema = mongoose.Schema({
 const Product = new mongoose.model("Product", productSchema);
 
 // create Product
+// create Product
 
 app.post("/api/v1/product/new", async (req, res) => {
   const product = await Product.create(req.body);
